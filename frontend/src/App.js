@@ -1,26 +1,57 @@
+// import React, { useState} from 'react';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './global.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import Routes from './routes';
+
+function App(){
+  return(
+    <Routes />
   );
 }
 
 export default App;
+
+
+
+/**JSX  */
+
+// function App() { pode ser assim
+//   return (
+//     <Header />
+//   );
+// }
+
+/**utilizando props */
+
+// function App() {
+//   return (
+//     <Header title="Semana Omni"/>
+//   );
+
+// function App() {
+//   return (
+//     <Header>
+//       Semana Omni
+//     </Header>
+//   );
+
+// function App() {
+//   const [counter, setCounter] = useState (0);
+
+//   //useState - Array [valor, funcaoDeAtualizacao]
+
+//   function increment (){
+//     setCounter(counter +1);
+//     console.log(counter);
+//   }
+
+//   return (
+//     <div>
+//     <Header> Contador: {counter}  </Header>
+//     <button onClick={increment}>Incrementar</button>
+//     </div>
+//   );
+// }
+
+// export default App;
